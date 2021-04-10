@@ -133,15 +133,15 @@ public class NumeroRomanoTest {
     public void grupos_sumatorios_tres_digitos_test() {
         String test = "MMMDCCCLXXXVIII"; // 3888
         numeroRomano.setNumeroRomano(test);
-        assertEquals(3888, numeroRomano.toDecimal());
+        assertEquals((short)3888, numeroRomano.toDecimal());
     }
 
-    // @Test
-    // public void grupos_sumatorios_test() {
-    //     String test = "MMDCCLXXVII"; // 2777
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(2777, numeroRomano.toDecimal());
-    // }
+    @Test
+    public void grupos_sumatorios_test() {
+        String test = "MMDCCLXXVII"; // 2777
+        numeroRomano.setNumeroRomano(test);
+        assertEquals((short)2777, numeroRomano.toDecimal());
+    }
 
     // @Test
     // public void grupos_substractivos_test() {
