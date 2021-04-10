@@ -48,18 +48,18 @@ public class NumeroRomanoTest {
          */
     }
 
-    // @Test
-    // public void tres_repeticiones_C_test() {
+    @Test
+    public void tres_repeticiones_C_test() {
 
-    //     String testCase = "MMMUCCC";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(3300, numeroRomano.toDecimal());
-    // }
+        String testCase = "MMMCCC";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)3300, numeroRomano.toDecimal());
+    }
 
     // @Test
     // public void tres_repeticiones_X_test() {
 
-    //     String testCase = "MMMUXXX";
+    //     String testCase = "MMMXXX";
     //     numeroRomano.setNumeroRomano(testCase);
 
     //     assertEquals(3030, numeroRomano.toDecimal());
