@@ -74,17 +74,17 @@ public class NumeroRomanoTest {
         assertEquals((short)3003, numeroRomano.toDecimal());
     }
 
-    // @Test
-    // public void una_D_test() {
+    @Test
+    public void una_D_test() {
 
-    //     String testCase = "MMMUDUIII";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(3503, numeroRomano.toDecimal());
+        String testCase = "MMMDIII";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)3503, numeroRomano.toDecimal());
 
-    //     testCase = "MMMUCDUIII";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertNotEquals(3503, numeroRomano.toDecimal());
-    // }
+        testCase = "MMMCDIII";
+        numeroRomano.setNumeroRomano(testCase);
+        assertNotEquals((short)3503, numeroRomano.toDecimal());
+    }
 
     // /**
     //  * Grupos substractivos
