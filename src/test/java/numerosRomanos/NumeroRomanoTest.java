@@ -143,16 +143,16 @@ public class NumeroRomanoTest {
         assertEquals((short)2777, numeroRomano.toDecimal());
     }
 
-    // @Test
-    // public void grupos_substractivos_test() {
-    //     String test = "CDXLIV"; // 444
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(444, numeroRomano.toDecimal());
+    @Test
+    public void grupos_substractivos_test() {
+        String test = "CDXLIV"; // 444
+        numeroRomano.setNumeroRomano(test);
+        assertEquals((short)444, numeroRomano.toDecimal());
 
-    //     test = "CDXXXIX"; // 439
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(439, numeroRomano.toDecimal());
-    // }
+        test = "CDXXXIX"; // 439
+        numeroRomano.setNumeroRomano(test);
+        assertEquals((short)439, numeroRomano.toDecimal());
+    }
 
     // @Test
     // public void initArrayRegex_test() {
