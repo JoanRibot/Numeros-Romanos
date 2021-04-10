@@ -154,15 +154,15 @@ public class NumeroRomanoTest {
         assertEquals((short)439, numeroRomano.toDecimal());
     }
 
-    // @Test
-    // public void initArrayRegex_test() {
-    //     String test = "V";
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(2, numeroRomano.getRegexDiccionario().longitud());
-    //     assertEquals(5, numeroRomano.valorDecimal(test));
-    //     assertEquals("(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])", numeroRomano.getRegexDiccionario().getRegexValue("grupoSumatorio"));
-	// 	assertEquals("(C[DM])|(X[LC])|(I[VX])", numeroRomano.getRegexDiccionario().getRegexValue("grupoSustractivo"));
-    // }
+    @Test
+    public void initArrayRegex_test() {
+        String test = "V";
+        numeroRomano.setNumeroRomano(test);
+        assertEquals(2, numeroRomano.getRegexDiccionario().size());
+        assertEquals((short)5, numeroRomano.valorDecimal(test));
+        assertEquals("(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])", numeroRomano.getRegexDiccionario().get("grupoSumatorio"));
+		assertEquals("(C[DM])|(X[LC])|(I[VX])", numeroRomano.getRegexDiccionario().get("grupoSustractivo"));
+    }
 
     @Test
     public void toDecimal() {

@@ -47,8 +47,8 @@ public class NumeroRomano {
 		this.regexDiccionario = regexDiccionario;
 	}
 	public void initRegexDicionario() {
-		this.regexDiccionario.put("sumatorio", "(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])");
-		this.regexDiccionario.put("substractivo", "(C[DM])|(X[LC])|(I[VX])");
+		this.regexDiccionario.put("grupoSumatorio", "(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])");
+		this.regexDiccionario.put("grupoSustractivo", "(C[DM])|(X[LC])|(I[VX])");
 	}
 
 	public Object toDecimal() {
