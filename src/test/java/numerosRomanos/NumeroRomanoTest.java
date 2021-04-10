@@ -129,12 +129,12 @@ public class NumeroRomanoTest {
         assertEquals((short)9, numeroRomano.toDecimal());  
     }
 
-    // @Test
-    // public void grupos_sumatorios_tres_digitos_test() {
-    //     String test = "MMMDCCCLXXXVIII"; // 3888
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(3888, numeroRomano.toDecimal());
-    // }
+    @Test
+    public void grupos_sumatorios_tres_digitos_test() {
+        String test = "MMMDCCCLXXXVIII"; // 3888
+        numeroRomano.setNumeroRomano(test);
+        assertEquals(3888, numeroRomano.toDecimal());
+    }
 
     // @Test
     // public void grupos_sumatorios_test() {
