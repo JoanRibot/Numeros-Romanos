@@ -47,8 +47,8 @@ public class NumeroRomano {
 		this.regexDiccionario = regexDiccionario;
 	}
 	public void initRegexDicionario() {
-		this.regexDiccionario.put("suma", "(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])");
-		this.regexDiccionario.put("resta", "(C[DM])|(X[LC])|(I[VX])");
+		this.regexDiccionario.put("sumatorio", "(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])");
+		this.regexDiccionario.put("substractivo", "(C[DM])|(X[LC])|(I[VX])");
 	}
 
 	public Object toDecimal() {
@@ -63,8 +63,6 @@ public class NumeroRomano {
 	private void separarYSumar(Matcher matcher) {
 		while (matcher.find()) {
 				this.numeroDecimal += valorDecimal(matcher.group());
-				System.out.println(matcher.group());
-
 		}
 	}
 
