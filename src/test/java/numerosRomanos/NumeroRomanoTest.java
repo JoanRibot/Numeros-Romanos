@@ -117,17 +117,17 @@ public class NumeroRomanoTest {
         assertEquals((short)90, numeroRomano.toDecimal());        
     }
 
-    // @Test
-    // public void grupo_I_VX_test() {
+    @Test
+    public void grupo_I_VX_test() {
 
-    //     String testCase = "IV";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(4, numeroRomano.toDecimal());  
+        String testCase = "IV";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)4, numeroRomano.toDecimal());  
 
-    //     testCase = "IX";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(9, numeroRomano.toDecimal());  
-    // }
+        testCase = "IX";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)9, numeroRomano.toDecimal());  
+    }
 
     // @Test
     // public void grupos_sumatorios_tres_digitos_test() {
