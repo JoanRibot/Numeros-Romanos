@@ -44,7 +44,7 @@ public class NumeroRomano {
 	}
 
 	public void initRegexDicionario() {
-		setRegex("C|M");
+		setRegex("X|C|M");
 	}
 
 	public Object toDecimal() {

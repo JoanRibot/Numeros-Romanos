@@ -56,14 +56,14 @@ public class NumeroRomanoTest {
         assertEquals((short)3300, numeroRomano.toDecimal());
     }
 
-    // @Test
-    // public void tres_repeticiones_X_test() {
+    @Test
+    public void tres_repeticiones_X_test() {
 
-    //     String testCase = "MMMXXX";
-    //     numeroRomano.setNumeroRomano(testCase);
+        String testCase = "MMMXXX";
+        numeroRomano.setNumeroRomano(testCase);
 
-    //     assertEquals(3030, numeroRomano.toDecimal());
-    // }
+        assertEquals((short)3030, numeroRomano.toDecimal());
+    }
 
     // @Test
     // public void tres_repeticiones_I_test() {
