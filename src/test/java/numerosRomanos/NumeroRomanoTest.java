@@ -173,25 +173,25 @@ public class NumeroRomanoTest {
         assertTrue(numeroRomano.getExpresionsValues().contains("(C[DM])|(X[LC])|(I[VX])"));		
     }
 
-    // @Test
-    // public void valorDecimal_test() {
-    //     String test = "V";
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(2, numeroRomano.getRegexDiccionario().getRegex().size());
-    //     assertEquals(5, numeroRomano.valorDecimal(test));
+    @Test
+    public void valorDecimal_test() {
+        String test = "V";
+        numeroRomano.setNumeroRomano(test);
+        assertEquals(2, numeroRomano.getRegexDiccionario().size());
+        assertEquals((short)5, numeroRomano.valorDecimal(test));
 
-    //     test = "IV"; 
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(4, numeroRomano.valorDecimal(test));
+        test = "IV"; 
+        numeroRomano.setNumeroRomano(test);
+        assertEquals((short)4, numeroRomano.valorDecimal(test));
 
-    //     test = "CM"; 
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(900, numeroRomano.valorDecimal(test));
+        test = "CM"; 
+        numeroRomano.setNumeroRomano(test);
+        assertEquals((short)900, numeroRomano.valorDecimal(test));
 
-    //     /**
-    //      *  test = "U";
-    //      * numeroRomano.setNumeroRomano("U");
-    //      * assertEquals(900, numeroRomano.valorDecimal(test));
-    //      */
-    // }
+        /**
+         *  test = "U";
+         * numeroRomano.setNumeroRomano("U");
+         * assertEquals(900, numeroRomano.valorDecimal(test));
+         */
+    }
 }
