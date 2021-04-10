@@ -105,17 +105,17 @@ public class NumeroRomanoTest {
         assertEquals((short)900, numeroRomano.toDecimal());
     }
 
-    // @Test
-    // public void grupo_X_LC_test() {
+    @Test
+    public void grupo_X_LC_test() {
 
-    //     String testCase = "XL";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(40, numeroRomano.toDecimal());  
+        String testCase = "XL";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)40, numeroRomano.toDecimal());  
 
-    //     testCase = "XC";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(90, numeroRomano.toDecimal());        
-    // }
+        testCase = "XC";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)90, numeroRomano.toDecimal());        
+    }
 
     // @Test
     // public void grupo_I_VX_test() {
