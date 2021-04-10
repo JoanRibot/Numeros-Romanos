@@ -86,24 +86,24 @@ public class NumeroRomanoTest {
         assertNotEquals((short)3503, numeroRomano.toDecimal());
     }
 
-    // /**
-    //  * Grupos substractivos
-    //  * IV(4), IX(9), 
-    //  * XL(40), XC(90), 
-    //  * CD(400), CM(900)
-    //  */
+    /**
+     * Grupos substractivos
+     * IV(4), IX(9), 
+     * XL(40), XC(90), 
+     * CD(400), CM(900)
+     */
 
-    // @Test
-    // public void grupo_C_DM_test() {
+    @Test
+    public void grupo_C_DM_test() {
 
-    //     String testCase = "CD";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(400, numeroRomano.toDecimal());
+        String testCase = "CD";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)400, numeroRomano.toDecimal());
 
-    //     testCase = "CM";
-    //     numeroRomano.setNumeroRomano(testCase);
-    //     assertEquals(900, numeroRomano.toDecimal());
-    // }
+        testCase = "CM";
+        numeroRomano.setNumeroRomano(testCase);
+        assertEquals((short)900, numeroRomano.toDecimal());
+    }
 
     // @Test
     // public void grupo_X_LC_test() {
@@ -164,14 +164,14 @@ public class NumeroRomanoTest {
 	// 	assertEquals("(C[DM])|(X[LC])|(I[VX])", numeroRomano.getRegexDiccionario().getRegexValue("grupoSustractivo"));
     // }
 
-    // @Test
-    // public void toDecimal() {
-    //     String test = "V";
-    //     numeroRomano.setNumeroRomano(test);
-    //     assertEquals(2, numeroRomano.getExpresionesRegulares().size());
-    //     assertTrue(numeroRomano.getRegexDiccionario().getValues().contains("(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])"));
-    //     assertTrue(numeroRomano.getRegexDiccionario().getValues().contains("(C[DM])|(X[LC])|(I[VX])"));		
-    // }
+    @Test
+    public void toDecimal() {
+        String test = "V";
+        numeroRomano.setNumeroRomano(test);
+        assertEquals(2, numeroRomano.getRegexDiccionario().size());
+        assertTrue(numeroRomano.getExpresionsValues().contains("(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])"));
+        assertTrue(numeroRomano.getExpresionsValues().contains("(C[DM])|(X[LC])|(I[VX])"));		
+    }
 
     // @Test
     // public void valorDecimal_test() {
